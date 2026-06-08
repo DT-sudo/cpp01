@@ -1,5 +1,17 @@
 #include "Harl.hpp"
 
+Harl::Harl()
+{
+    levels[0] = "DEBUG";
+    levels[1] = "INFO";
+    levels[2] = "WARNING";
+    levels[3] = "ERROR";
+    ptr[0] = &Harl::debug;
+    ptr[1] = &Harl::info;
+    ptr[2] = &Harl::warning;
+    ptr[3] = &Harl::error;
+}
+
 void Harl::debug(void)
 {
     std::cout << "I love having extra bacon for my "

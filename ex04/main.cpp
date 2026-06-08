@@ -2,7 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-    std::string line;
+    char c;
+    std::string content;
     std::string myfile;
     std::string v1;    
     std::string v2;  
@@ -30,7 +31,8 @@ int main(int argc, char *argv[])
         std::cout << "can't create output file!" << std::endl;
         return 1;
     }
-    while (getline(YourFile, line))
-        MyFile << analine(line, v1, v2) + "\n";
+    while (YourFile.get(c))
+        content += c;
+    MyFile << replace_all(content, v1, v2);
     return 0;
 }

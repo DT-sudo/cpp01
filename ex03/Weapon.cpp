@@ -12,10 +12,8 @@ const std::string& Weapon::getType() const
 
 Weapon::Weapon(std::string w_name) : _type(w_name)
 {
-    std::cout << "Weapon constructor called" << std::endl;
 }
 
 Weapon::~Weapon()
 {
-    std::cout << "Weapon destructor called" << std::endl;
 }
