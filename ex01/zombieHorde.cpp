@@ -1,4 +1,4 @@
-#include "Zombie.cpp"
+#include "Zombie.hpp"
 
 Zombie* zombieHorde(int N, std::string name)
 {
@@ -7,5 +7,6 @@ Zombie* zombieHorde(int N, std::string name)
     head = new Zombie[N];
     for (int i = 0; i < N; i++)
         head[i].name_it(name);
+        
     return head;
 }

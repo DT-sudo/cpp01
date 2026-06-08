@@ -3,10 +3,9 @@
 int main(void)
 {
     int num = 5;
-    std::string name = "Oleg";
     Zombie *head;
 
-    head = zombieHorde(num, name);
+    head = zombieHorde(num, "Oleg");
     for(int i = 0; i < num; i++)
     {
         std::cout<< "Zombie #" << i << " ";
@@ -14,5 +13,6 @@ int main(void)
         std::cout << std::endl;
     }
     delete[] head;
+    
     return 0;
 }
