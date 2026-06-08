@@ -2,16 +2,12 @@
 
 int main(void)
 {
-    std::string name;
+    Zombie *heapZombie;
 
-    std::cout << "name ('name s/l')> " << std::endl;
-    while (std::getline(std::cin, name))
-    {
-        std::cout << "name ('name s/l')> " << std::endl;
-        if (name.substr(name.size() - 1, name.size()) == "s")
-            randomChump(name);
-        else if (name.substr(name.size() - 1, name.size()) == "l")
-            newZombie(name);
-    }
+    heapZombie = newZombie("Heap zombie");
+    heapZombie->announce();
+    delete heapZombie;
+
+    randomChump("Stack zombie");
     return 0;
 }

@@ -9,10 +9,9 @@ Zombie::Zombie(std::string name)
 {
     _name = name;
     std::cout << "Zombie constructor called\n" << std::endl;
-    announce();
 }
 
 Zombie::~Zombie()
 {
-    std::cout<< "Zombie destructor called\n" << std::endl;
+    std::cout<< "Zombie "<< _name <<" destructor called\n" << std::endl;
 }
