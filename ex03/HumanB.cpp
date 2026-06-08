@@ -2,6 +2,12 @@
 
 HumanB::HumanB(std::string hname): name(hname), wpn(NULL)
 {
+    std::cout << "HumanB constructor called" << std::endl;
+}
+
+HumanB::~HumanB()
+{   
+    std::cout << "HumanB destructor called" << std::endl;
 }
 
 void HumanB::attack() const
@@ -13,20 +19,8 @@ void HumanB::attack() const
         std::cout << name << " is unarmored!" << std::endl;
     }
 }
-Weapon& etWeapon(Weapon& w_name)
+
+void HumanB::setWeapon(Weapon& w_name)
 {
-    wpn = &w_name.;
+    wpn = &w_name;
 }
-
-int main(void)
-{
-    int x = 10;
-
-    int func(int x)
-    {
-        x = 1;
-        return x;
-    }
-
-}
-

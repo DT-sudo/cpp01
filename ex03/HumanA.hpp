@@ -14,7 +14,7 @@ class HumanA
     void attack() const;
 
     HumanA(std::string hname, Weapon& weapon);
-    ~HumanA(){};
+    ~HumanA();
 };
 
 #endif 
