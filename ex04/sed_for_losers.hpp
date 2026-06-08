@@ -5,6 +5,6 @@
 #include <fstream>
 #include <iostream>
 
-
+std::string analine(std::string line, std::string v1, std::string v2);
 
 #endif

@@ -3,7 +3,7 @@ NAME = replace
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = main.cpp \
+SRCS = main.cpp sed_for_losers.cpp\
 
 OBJS = $(SRCS:.cpp=.o)
 
